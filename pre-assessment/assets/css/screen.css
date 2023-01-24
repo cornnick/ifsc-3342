@@ -1,0 +1,158 @@
+
+/* an "*" is used to target all elements of the html document. This section sets the default margin and padding values of the page to 0px by default */
+* {
+	margin: 0px; 
+	padding: 0px;
+}
+body {
+	text-align: center;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	background-color: #171717;
+	font-size: 16px;
+	line-height: 1.5em;
+	background-image: url("../img/bg-tile.jpg");
+  	background-repeat: repeat-x;
+}
+#container {
+	max-width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+	background-color: #FFF;
+	margin-top: 20px;
+	border: 1px solid #CCC;
+}
+
+.image-link {
+    background-image: url("/pre-assessment/assets/img/header_cool-01.png");
+    background-size: cover;
+    padding: 0;
+    display: inline-block;
+    width: 800px; /* adjust to the desired width of the image */
+    height: 140px; /* adjust to the desired height of the image */
+    position: relative;
+    text-indent: -9999px; /* push the text out of the visible screen */
+}
+
+.alert{
+	background-color: darkslategray;
+	color: lightskyblue;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+#nav {
+	background-color: #000;
+}
+#nav ul {
+	list-style-type: none;
+	margin-left: 10px;
+}
+#nav ul li {
+	display: inline;
+	height: 35px;
+	line-height: 35px;
+}
+#nav ul li a {
+	display: inline-block;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-size: 18px;
+}
+#nav ul li a:link, #nav ul li a:visited {
+	text-decoration: none;
+	border-bottom-width: 4px;
+	border-bottom-style: solid;
+	border-bottom-color: #000;
+	color: #FFF;
+}
+#nav ul li a:hover {
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+}
+#content {
+	margin: 20px;
+}
+
+#content img {
+	float: right;
+	margin: 10px;
+ 	border: 5px solid rgb(215,133,42);
+	border-radius: 10px;
+}
+
+#content p {
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+#content h2 {
+	color: rgb(73,113,86);
+}
+
+#content h3{
+	color: rgb(215,133,42);
+}
+
+#content h4 {
+	color: rgb(26,88,81);
+	font-style: italic;
+}
+
+a:link {
+	color: cadetblue;
+}
+
+a:hover {
+	color: rgb(217,158,42);
+}
+
+a:visited {
+	color: lightskyblue;
+}
+
+a:active {
+	color:#FFF;
+}
+
+.definition{
+	font-weight: bold;
+	color: rgb(217,158,42);
+ }
+
+ #content p a:hover {
+	background-color: cadetblue;
+	border-radius: 20px;
+	padding: 5px;
+ }
+ 
+#footer {
+	background-color: #000;
+	color: #FFF;
+	height: 25px;
+}
+#footer h6 {
+	font-size: 12px;
+	line-height: 25px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+#footer a:link {
+	color: cadetblue;
+}
+
+#footer a:hover {
+	color: rgb(217,158,42);
+}
+
+#footer a:visited {
+	color: lightskyblue;
+}
+
+#footer a:active {
+	color:#FFF;
+}
+
+
