@@ -29,14 +29,14 @@ html {
 background-image:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/7248/grid-1.png");*/
 
 main {
-  width: 956px;
+  width: 1280px;
   margin: 20px auto;
   border: 1px solid #000;
   background-image: url("../resources/grid.png");
 }
 
 header.primary {
-  width: 916px;
+  width: 1240px;
   margin: 20px;
   background-color: rgba(0, 0, 0, 0.4);
   float: left;
@@ -44,7 +44,7 @@ header.primary {
 }
 
 #blog {
-  width: 604px;
+  width: 925px;
   background-color: rgba(0, 0, 0, 0.4);
   float: left;
   margin-left: 20px;
@@ -52,14 +52,14 @@ header.primary {
 }
 
 aside {
-  width: 292px;
+  width: 295px;
   float: left;
   background-color: rgba(0, 0, 0, 0.4);
   margin-left: 20px;
   padding: 20px;
 }
 footer.primary {
-  width: 916px;
+  width: 1240px;
   margin: 20px;
   background-color: rgba(0, 0, 0, 0.4);
   float: left;
