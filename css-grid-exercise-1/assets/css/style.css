@@ -29,45 +29,45 @@ html {
 background-image:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/7248/grid-1.png");*/
 
 main {
-  width: 85vw;
-  margin: 1.562% auto;
+  display: grid;
+  grid-template-columns: repeat(1fr, 12);
+  width: 1280px;
+  margin: 2vh auto;
+  padding: 0px 20px;
+  gap: 20px;
   border: 1px solid #000;
-  /* background-image: url("../resources/grid.png"); */
+  background-image: url("../resources/grid.png");
 }
 
 header.primary {
   /* width: 1240px; */
-  width: 96.875%;
-  margin: 1.5625%;
+  grid-column: 1 / span 12;
   background-color: rgba(0, 0, 0, 0.4);
-  float: left;
-  padding: 1.562%;
+}
+
+#content{
+  grid-column: 1 / span 7;
+  display: grid;
+  grid-template-columns: repeat(1fr, 12);
+  padding: 0px;
+  gap: 20px;
 }
 
 #blog {
   /* width: 925px; */
-  width: 72.265%;
+  grid-column: 1 / 8;
   background-color: rgba(0, 0, 0, 0.4);
-  float: left;
-  margin-left: 1.5625%;
-  padding: 1.5625%;
 }
 
 aside {
   /* width: 295px; */
-  width: 23.046%;
-  float: left;
+  grid-column:  8 / span 5;
   background-color: rgba(0, 0, 0, 0.4);
-  margin-left: 1.5625%;
-  padding: 1.5625%;
 }
 footer.primary {
   /* width: 1240px; */
-  width: 96.875%;
-  margin: 1.562%;
+  grid-column: 1 / span 12;
   background-color: rgba(0, 0, 0, 0.4);
-  float: left;
-  padding: 1.562%;
 }
 
 
