@@ -30,44 +30,52 @@ background-image:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/7248/grid-1.p
 
 main {
   display: grid;
-  grid-template-columns: repeat(1fr, 12);
-  width: 1280px;
+  grid-template-columns: repeat(12,1fr);
+  width: 80vw;
   margin: 2vh auto;
   padding: 0px 20px;
   gap: 20px;
   border: 1px solid #000;
-  background-image: url("../resources/grid.png");
 }
 
 header.primary {
   /* width: 1240px; */
   grid-column: 1 / span 12;
   background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  font-family: 'Climate Crisis', sans-serif;
+}
+
+h2{
+  font-family: 'Tilt Neon', sans-serif;
 }
 
 #content{
-  grid-column: 1 / span 7;
+  grid-column: span 12;
   display: grid;
-  grid-template-columns: repeat(1fr, 12);
+  grid-template-columns: repeat(12,1fr);
   padding: 0px;
-  gap: 20px;
+  grid-gap: 20px;
 }
 
 #blog {
   /* width: 925px; */
-  grid-column: 1 / 8;
+  grid-column: 1 / span 8;
   background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
 }
 
 aside {
   /* width: 295px; */
-  grid-column-start: 8;
+  grid-column: 9 / span 4;
   background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
 }
 footer.primary {
   /* width: 1240px; */
   grid-column: 1 / span 12;
   background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
 }
 
 
