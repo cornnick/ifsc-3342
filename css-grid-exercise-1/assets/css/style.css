@@ -44,6 +44,7 @@ header.primary {
   background-color: rgba(0, 0, 0, 0.4);
   padding: 20px;
   font-family: 'Climate Crisis', sans-serif;
+  
 }
 
 h2{
@@ -79,11 +80,11 @@ footer.primary {
 }
 
 
-/*media queries
-@media screen and (min-width:400px){
+
+@media screen and (min-width:440px){
   main{
     background:purple;
-    width:300px;
+    width:340px;
   }
 }
 
