@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Native Video and Audio</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+</head>
+<body>
+    <h1>Native Video Player</h1>
+    <video poster="hudson-shelter-falls-poster.jpg" controls="controls" width="640" height="360">
+        <source width="640" height="360" src="./assets/video/hudson-shelter-falls.mp4" type="video/mp4" />
+        <source width="640" height="360" src="./assets/video/hudson-shelter-falls.webm" type="video/webm" />
+        <source width="640" height="360" src="./assets/video/hudson-shelter-falls.ogv" type="video/ogg" />
+    </video>
+
+    <h1>Native Audio Player</h1>
+    <audio controls="controls" class="audioplayer">
+        <source src="./assets/audio/thunder.ogg" type="audio/ogg" /><!-- Firefox, Opera, Chrome -->
+        <source src="./assets/audio/thunder.mp3" type="audio/mp3" /><!-- Safari, Chrome, IE9+ -->
+        <source src="./assets/audio/thunder.wav" type="audio/wav" /><!-- Safari, Opera, IE9+, Firefox -->
+        <a href="./assets/audio/thunder.mp3">Download the Audio</a>
+    </audio>
+
+</body>
+</html>
