@@ -106,7 +106,7 @@ html {
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 255, 200, 0;
+  --bs-primary-rgb: 153, 157, 168;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -10900,7 +10900,7 @@ p {
 }
 
 .page-section {
-  padding: 6rem 0;
+  padding: 3rem 0;
 }
 .page-section h2.section-heading, .page-section .section-heading.h2 {
   font-size: 2.5rem;
@@ -11383,11 +11383,21 @@ section#contact form#contactForm :-ms-input-placeholder {
   position: relative;
   top: 50%;
   margin-top: 100px;
+  margin-bottom: 10px;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
   width: 90vw;
   
+}
+
+#services{
+  margin-top: 9vw;
+}
+
+@media screen and (max-width: 768px){
+  .carousel {margin-top: 200px;
+  }
 }
 
 
