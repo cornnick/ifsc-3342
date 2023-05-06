@@ -11404,4 +11404,8 @@ section#contact form#contactForm :-ms-input-placeholder {
   height: 50vw;
 }
 
+.row-span-2{
+  grid-row: span 2;
+}
+
 
