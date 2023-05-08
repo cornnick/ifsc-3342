@@ -11505,3 +11505,15 @@ section#contact2 form#contactForm2 :-ms-input-placeholder {
   font-weight: 700;
   color: #ced4da;
 }
+
+iframe[src*="jotform.com"] {
+  max-height: none !important;
+}
+
+iframe[src*="jotform.com"] .formFooter {
+  display: none !important;
+}
+
+
+
+
