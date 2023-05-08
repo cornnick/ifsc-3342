@@ -11506,14 +11506,22 @@ section#contact2 form#contactForm2 :-ms-input-placeholder {
   color: #ced4da;
 }
 
-iframe[src*="jotform.com"] {
-  max-height: none !important;
+.portfolio-caption-subheading a:link {
+  color: inherit;
 }
 
-iframe[src*="jotform.com"] .formFooter {
-  display: none !important;
+.portfolio-caption-subheading a:visited {
+  color: inherit;
 }
 
+.portfolio-caption-subheading a:hover {
+  color: #ced4da;
+  text-decoration: none;
+}
 
+.portfolio-caption-subheading a:active {
+  color: white;
+  text-decoration: none;
+}
 
 
