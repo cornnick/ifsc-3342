@@ -172,6 +172,15 @@ body{
     width: 90vw;
     font-size: 3rem;
   }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+  
 }
 
 
