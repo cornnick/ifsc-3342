@@ -155,6 +155,24 @@ body{
   }
 }
 
+/* iPhones */
+@media only screen and (max-device-width: 414px) and (max-device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+  ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 1fr);
+    gap: 10px;
+  }
+
+  .container {
+    width: 100vw;
+  }
+
+  ul li {
+    width: 90vw;
+    font-size: 3rem;
+  }
+}
 
 
 
