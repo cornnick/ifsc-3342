@@ -1,45 +1,62 @@
-/* CSS HEX codes:
---green-yellow-crayola: #dde392ff;
---laurel-green: #afbe8fff;
---xanadu: #7d8570ff;
---ebony: #646f58ff;
---rifle-green: #504b3aff;
-*/
+:root{
+--bg-color: rgba(175, 190, 143, 1);
+--container-color: rgba(125,133,112, .3);
+--h1-font-color: rgb(80,75,58);
+--h2-font-color: #723d46;
+--link-a-color: #283618;
+--visited-a-color: #73877b;
+--hover-a-color: #723d46;
+--active-a-color: #73877b;
+--li-bg-color: #D9D9D9;
+--hover-li-color: rgba(175, 190, 143, .4);
+}
+
 
 body{
-    background-color: #afbe8fff;
+    background-color: var(--bg-color);
     font-family: 'Sofia Sans', sans-serif;
     font-weight: bold;
     font-size: 1.5em;
     margin: 0;
     background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
-    color: rgb(80,75,58);
+    text-align: center;
   }
   
   h1{
     font-size: 2.0em;
     font-weight: bolder;
-    margin-bottom: 20px;
+    margin: 20px auto;
+    color: var(--h1-font-color);
   }
   
   hr{
     padding: 0;
     margin:0;
-    border-top: 1px solid #646f58ff;
+    border-top: 1px solid var(--h1-font-color);
   }
 
   h2{
-    color: #723d46;
+    color: var(--h2-font-color);
+    text-align: center;
+    padding: 0 auto;
+    margin-top:45px;
+    margin-bottom:0px;
   }
 
-  p, ul, ul ul {
-    font-size: 1em;
+  p, ul, ul li {
+    font-size: 1.2em;
   }
  
   .container {
    width: 80vw;
-   margin: 40px auto;
+   margin: 0 auto;
    max-width: 900px;
+  }
+
+  .grid-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   section#content {
@@ -48,43 +65,101 @@ body{
    transition: 0.6s;
    font-size: 1em;
    border-radius: 10px;
-   background: rgba(125,133,112, .3);
+   background: var(--container-color);
    padding: 20px;
   }
   
    /* unvisited link */
       a:link {
-        color: #283618;
+        color: var(--link-a-color);
       }
       
       /* visited link */
       a:visited {
-        color: #73877b;
+        color: var(--visited-a-color);
       }
       
       /* mouse over link */
       a:hover {
-        color: #723d46;
+        color: var(--hover-a-color);
       }
       
       /* selected link or click on phones*/
       a:active {
-        color: #73877b;
+        color: var(--active-a-color);
       }
 
-      /* changing color of bullet points in list */
+      
       ul {
         list-style: none; /* Remove default bullets */
+        text-align: center;
+        padding: 20px 30px;
       }
-      
-      ul li::before {
-        content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-        color: #723d46; /* Change the color */
-        font-weight: bold; /* If you want it to be bold */
-        display: inline-block; /* Needed to add space between the bullet and the text */
-        width: .8em; /* Also needed for space (tweak if needed) */
-        margin-left: -1em; /* Also needed for space (tweak if needed) */
-        font-size: 1.3em;
+
+      ul li {
+        padding: 50px;
+        background-color: var(--li-bg-color);
+        border-radius: 10px;
+        box-sizing: border-box;
+        border: 2px solid;
+        border-color: var(--h2-font-color);
+        align-self: center;
+        height:175px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+
+     
+
+      ul li:hover {
+        background-color: var(--hover-li-color); /* Change the background color on hover */
       }
   
+    /* Large screens */
+@media screen and (min-width: 992px) {
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 30px;
+    padding: auto;
+    margin: 25px;
+  }
+  ul li:last-child {
+    grid-column: span 3;
+    grid-row: 4;
+    text-align: center;
+    align-self: center;
+  }
+}
+
+/* Medium screens */
+@media screen and (max-width: 991px) {
+  ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+/* Mobile screens */
+@media screen and (max-width: 576px) {
+  ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 1fr);
+    gap: 10px;
+  }
+}
+
+
+
+
+
+
+
+      
     
